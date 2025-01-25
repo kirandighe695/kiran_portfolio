@@ -12,12 +12,12 @@ function Services() {
     },
     {
       title: "App Development",
-      description: "Create feature-rich mobile applications tailored to your needs.",
+      description: "Create feature-rich mobile applications tailored to your needs and requirements.",
       icon: <FaMobileAlt />,
     },
     {
       title: "REST API Development",
-      description: "Design and implement robust RESTful APIs for your applications.",
+      description: "Design and implement robust RESTful APIs for your applications and softwares.",
       icon: <FaServer />,
     },
     {
