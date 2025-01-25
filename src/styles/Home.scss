@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 0.3rem 1rem;
   background: linear-gradient(to right, #1e3c72, #2a5298);
   color: #fff;
   animation: fadeIn 1.5s ease-in-out;
@@ -54,7 +54,7 @@
 
       img.profile-image {
         max-width: 100%;
-        height: auto;
+        height: 72vh;
         border-radius: 12px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         animation: fadeInUp 1.5s ease-in-out;

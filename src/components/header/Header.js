@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Profile from "../../styles/assets/student.png";
+import Profile from "../../styles/assets/kiran.jpg";
 import '../../styles/Header.scss';
 
 function Header() {
