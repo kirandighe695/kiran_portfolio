@@ -4,8 +4,9 @@ import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import Service from './pages/services/Service';
 import Projects from './pages/projects/Project';
-// import Resume from './pages/resume/Resume';
+import Resume from './pages/resume/Resume';
 import Contact from './pages/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -21,13 +22,14 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
-        {/* <section id="resume">
+        <section id="resume">
           <Resume />
-        </section> */}
+        </section>
         <section id="contact">
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

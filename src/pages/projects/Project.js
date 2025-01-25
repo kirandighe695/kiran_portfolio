@@ -43,7 +43,7 @@ function Projects() {
 
   return (
     <section id="projects" className="projects">
-      <h2 className="projects-title">Projects</h2>
+      <h2 className="projects-title">My Projects</h2>
       <div className="project-grid">
         {projectData.map((project, index) => (
           <div className="project-card" key={index}>

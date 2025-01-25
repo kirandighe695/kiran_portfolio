@@ -55,6 +55,7 @@ function Services() {
   return (
     <section id="services" className="services">
       <h2 className="services-title">Our Services</h2>
+      <h2 className="services-subtitle">What I do</h2>
       <div className="services-container">
         {services.map((service, index) => (
           <div className="service-card" key={index}>
