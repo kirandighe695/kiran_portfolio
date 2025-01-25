@@ -11,16 +11,16 @@ function Contact() {
 
         {/* Social Media Icons */}
         <div className="social-icons">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kirandighe695" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} />
           </a>
-          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/kiran-v-dighe0725" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} />
           </a>
           <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={30} />
           </a>
-          <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://firebase.google.com/docs/hosting/" target="_blank" rel="noopener noreferrer">
             <SiFirebase size={30} />
           </a>
         </div>

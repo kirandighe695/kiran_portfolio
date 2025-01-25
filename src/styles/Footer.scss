@@ -4,6 +4,7 @@
     color: #fff;
     text-align: center;
     font-size: 1rem;
+    height: auto;
     animation: fadeIn 1.5s ease-in-out;
 
     .footer-container {
@@ -34,7 +35,7 @@
     }
 
     @media (max-width: 480px) {
-        padding: 1.5rem 1rem;
+        padding: 0.1rem 1rem;
 
         .footer-container {
             font-size: 0.8rem;
