@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Home.scss";
-import student from "../../styles/assets/kiran1.png";
+import student from "../../styles/assets/kiran2.png";
 
 function Home() {
   return (
