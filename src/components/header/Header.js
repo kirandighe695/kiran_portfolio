@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Profile from "../../styles/assets/kiran.jpg";
+import logo from "../../styles/assets/logo.png";
 import '../../styles/Header.scss';
 
 function Header() {
@@ -33,7 +34,7 @@ function Header() {
         <img src={Profile} alt="Profile" />
       </div>
 
-      <h1 className="logo">Kiran Dighe</h1>
+      <img src={logo} alt='logo' className='logo'/>
 
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
