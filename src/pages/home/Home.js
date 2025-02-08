@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "../../styles/Home.scss";
 import student from "../../styles/assets/kiran2.png";
+import Typed from "typed.js";
 
 function Home() {
-  const roles = [
-    "Full-Stack Developer",
-    "MERN Stack Developer",
-    "Software Engineer",
-    "Tech Enthusiast",
-  ];
-
-  const [roleIndex, setRoleIndex] = useState(0);
-
+  const roles = ["Full-Stack Developer", "Freelancer", "MERN Stack Developer", "Software Engineer", "Tech Enthusiast"];
+  const typedRef = useRef(null);
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
+    const options = {
+      strings: roles,
+      typeSpeed: 1500,
+      backSpeed: 1000,
+      backDelay: 2000,
+      loop: true,
+      showCursor: true,
+      cursorChar: '_',
+    };
+    typedRef.current = new Typed(".typed-text", options);
+    return () => {
+      typedRef.current.destroy();
+    };
   });
 
   return (
@@ -25,7 +27,8 @@ function Home() {
       <div className="row">
         <div className="column col-6 text-container">
           <h1>Hi, I'm Kiran Dighe</h1>
-          <h4 style={{fontSize: '24px'}}>work as a <span className="changing-text">{roles[roleIndex]}</span></h4>
+          <h4 style={{ fontSize: '24px' }}>work as a</h4>
+          <span className="typed-text"></span>
           <p>
             I am a passionate full-stack developer with 2 years of professional experience,
             currently working at BAAP Company. I am also in my third year, pursuing a BCA degree
