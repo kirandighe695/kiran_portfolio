@@ -10,7 +10,7 @@ function Resume() {
                     <p>
                         Here’s a brief overview of my background, skills, and experiences. You can download my full resume for more details.
                     </p>
-                    <a href="/path-to-your-resume.pdf" download className="download-btn">
+                    <a href="./kirandighe.pdf" download className="download-btn">
                         Download Resume
                     </a>
                 </div>

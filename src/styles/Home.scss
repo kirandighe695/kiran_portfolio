@@ -30,7 +30,9 @@
 
         h1 {
           font-size: 2.8rem;
-          margin-bottom: 0;
+          margin-right: 30px;
+          line-height: 1;
+          margin-bottom: 0px;
         }
 
         @keyframes typing {
@@ -49,8 +51,10 @@
           }
         }
 
-        .changing-text {
+        .typed-text {
           font-size: 1.8rem;
+          font-weight: 800;
+          font-family:Georgia, 'Times New Roman', Times, serif;
           color: #f1c40f;
           transition: opacity 0.5s ease-in-out;
         }

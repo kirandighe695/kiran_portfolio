@@ -6,6 +6,7 @@ import Service from './pages/services/Service';
 import Projects from './pages/projects/Project';
 import Resume from './pages/resume/Resume';
 import Contact from './pages/contact/Contact';
+import Map from './pages/map/Map';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Contact />
         </section>
       </main>
+      <Map />
       <Footer />
     </div>
   );

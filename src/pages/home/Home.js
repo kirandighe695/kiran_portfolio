@@ -9,12 +9,12 @@ function Home() {
   useEffect(() => {
     const options = {
       strings: roles,
-      typeSpeed: 1500,
-      backSpeed: 1000,
-      backDelay: 2000,
+      typeSpeed: 150,
+      backSpeed: 50,
+      backDelay: 500,
       loop: true,
       showCursor: true,
-      cursorChar: '_',
+      cursorChar: ' ',
     };
     typedRef.current = new Typed(".typed-text", options);
     return () => {
@@ -26,9 +26,7 @@ function Home() {
     <section id="home" className="home">
       <div className="row">
         <div className="column col-6 text-container">
-          <h1>Hi, I'm Kiran Dighe</h1>
-          <h4 style={{ fontSize: '24px' }}>work as a</h4>
-          <span className="typed-text"></span>
+          <div><h1><b>Hi, I'm Kiran Dighe work</b> <br /> as a <span className="typed-text"></span></h1></div>
           <p>
             I am a passionate full-stack developer with 2 years of professional experience,
             currently working at BAAP Company. I am also in my third year, pursuing a BCA degree
