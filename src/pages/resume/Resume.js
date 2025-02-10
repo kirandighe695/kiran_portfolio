@@ -18,13 +18,18 @@ function Resume() {
                 <div className="resume-section">
                     <h3>Skills</h3><hr />
                     <ul className="skills-list">
+                        <li>HTML & CSS</li>
+                        <li>Bootstrap</li>
                         <li>JavaScript</li>
                         <li>React.js</li>
                         <li>Node.js</li>
-                        <li>HTML & CSS</li>
-                        <li>Firebase</li>
+                        <li>Express.js</li>
+                        <li>Fastify</li>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
                         <li>Git & GitHub</li>
-                        <li>UI/UX Design</li>
+                        <li>Firebase</li>
+                        <li>Digital Marketing</li>
                     </ul>
                 </div>
 
@@ -43,7 +48,7 @@ function Resume() {
                         <h4>Web Development Intern</h4>
                         <p>The BAAP company | Aug 2022 - Jan 2023</p>
                         <ul>
-                            <li>Created responsive landing pages using HTML, CSS, and JavaScript.</li>
+                            <li>Created responsive landing pages using HTML, CSS, Bootstrap, and JavaScript.</li>
                             <li>Assisted in integrating APIs with frontend applications.</li>
                         </ul>
                     </div>
