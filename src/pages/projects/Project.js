@@ -37,6 +37,7 @@ function Projects() {
       title: "Enterprise Resource Planning",
       description: "An integrated ERP solution that helps businesses manage core processes, including finance, HR, supply chain, and customer relations, all in one platform.",
       icon: <FaNetworkWired className="project-icon" />,
+      link: "https://platform.baap.company/"
     },
     {
       title: "To-Do List Application",

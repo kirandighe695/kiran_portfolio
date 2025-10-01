@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaCogs, FaFolderOpen, FaIdCard, FaAddressBook } from 'react-icons/fa';
 import Profile from "../../styles/assets/kiran.jpg";
 import logo from "../../styles/assets/logo.png";
 import '../../styles/Header.scss';
@@ -48,11 +48,11 @@ function Header() {
 
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="/" onClick={closeMenu}>Home</a></li>
-          <li><a href="#service" onClick={closeMenu}>Service</a></li>
-          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-          <li><a href="#resume" onClick={closeMenu}>Resume</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          <li><FaHome /><a href="/" onClick={closeMenu}>Home</a></li>
+          <li><FaCogs /><a href="#service" onClick={closeMenu}>Service</a></li>
+          <li><FaFolderOpen /><a href="#projects" onClick={closeMenu}>Projects</a></li>
+          <li><FaIdCard /><a href="#resume" onClick={closeMenu}>Resume</a></li>
+          <li><FaAddressBook /><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
       </nav>
 
