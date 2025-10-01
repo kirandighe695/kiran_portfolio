@@ -22,13 +22,12 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_5j0tc5y",
-        "template_98xj7zk",
-        formData,
-        "p23g0Tg0dfL-1f5yj"
-      )
+    emailjs.send(
+      'service_33jbtan',
+      'template_eq5krxd',
+      formData,
+      'vfrZZZl1I4a5gCRbT'
+    )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setResponseMessage("Email sent successfully!");
