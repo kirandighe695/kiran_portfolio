@@ -7,6 +7,7 @@ import '../../styles/Header.scss';
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,10 +29,19 @@ function Header() {
     setIsMenuOpen(false);
   };
 
+  const openProfileModal = () => {
+    setIsProfileModalOpen(true);
+  };
+
+  const closeProfileModal = () => {
+    setIsProfileModalOpen(false);
+  };
+
   return (
+    <>
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="profile-circle">
-        <img src={Profile} alt="Profile" />
+        <img src={Profile} alt="Profile" onClick={openProfileModal} style={{ cursor: 'pointer' }}/>
       </div>
 
       <img src={logo} alt='logo' className='logo'/>
@@ -50,6 +60,18 @@ function Header() {
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </button>
     </header>
+
+      {isProfileModalOpen && (
+        <div className="logo-modal-overlay" onClick={closeProfileModal}>
+          <div className="logo-modal-circle" onClick={(e) => e.stopPropagation()}>
+            <img src={Profile} alt="Logo" />
+            <button className="modal-close" onClick={closeProfileModal}>
+              <FaTimes />
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

@@ -1,14 +1,13 @@
-import React from "react";
 import {
   FaShoppingCart,
   FaChalkboardTeacher,
   FaProjectDiagram,
-  FaBuilding,
-  FaDatabase,
+  FaNetworkWired,
   FaTasks,
   FaTicketAlt,
   FaLongArrowAltRight,
 } from "react-icons/fa";
+import { GiMilkCarton } from "react-icons/gi";
 import "../../styles/Project.scss";
 
 function Projects() {
@@ -30,16 +29,14 @@ function Projects() {
       icon: <FaProjectDiagram className="project-icon" />,
     },
     {
-      title: "Simplify VMS",
-      description: "An efficient Visitor Management System (VMS) for tracking, registering, and managing visitor records seamlessly.",
-      icon: <FaBuilding className="project-icon" />,
-      link: "https://dev-account.simplifysandbox.net"
+      title: "Baap Dairy Management",
+      description: "A robust dairy management system that streamlines operations, from milk production tracking to inventory and sales management.",
+      icon: <GiMilkCarton className="project-icon" />,
     },
     {
-      title: "Simplify DSaaS Web",
-      description: "A cloud-based Data-as-a-Service (DSaaS) platform enabling efficient data management, storage, and analytics for modern businesses.",
-      icon: <FaDatabase className="project-icon" />,
-      link: "https://keycloak.ingress-qa.simplifyvmsapp.com/auth/realms/dsaas-qa/protocol/openid-connect/auth?client_id=dsaas-enterprise-web&redirect_uri=https%3A%2F%2Fqa-enterprise-dsaas.simplifysandbox.net%2Fenterprise%2Fmy-candidate&state=54a3340c-dae1-4242-ad81-fa30bc6fd982&response_mode=fragment&response_type=code&scope=openid&nonce=1bd90397-5b17-4590-8330-772a63a672d1"
+      title: "Enterprise Resource Planning",
+      description: "An integrated ERP solution that helps businesses manage core processes, including finance, HR, supply chain, and customer relations, all in one platform.",
+      icon: <FaNetworkWired className="project-icon" />,
     },
     {
       title: "To-Do List Application",
